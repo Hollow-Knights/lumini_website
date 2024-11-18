@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.primary-color: {
+  color: #333333;
+}
+
+.nav-item a:hover {
+  color: #0076ce;
+}
+
+#navbar a.active {
+  color: #0076ce;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-item {
+  padding: 0px 16px;
+}
+
+.nav-link {
+  text-align: center;
+}
