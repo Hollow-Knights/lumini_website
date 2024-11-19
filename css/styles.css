@@ -5,8 +5,13 @@
   font-family: "Roboto", sans-serif;
 }
 
-.primary-color: {
+.primary-color {
   color: #333333;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #0076ce;
 }
 
 .nav-item a:hover {
@@ -21,6 +26,7 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  background-color: #ffffff;
 }
 
 .nav-item {
@@ -29,4 +35,115 @@
 
 .nav-link {
   text-align: center;
+}
+
+.navbar-brand img {
+  width: 180px;
+}
+
+/* INÍCIO */
+
+.content-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./src/img/backgroud-inicio.png");
+  height: 100vh;
+  width: 100%;
+  gap: 120px;
+}
+
+.img-inicio img{
+  width: 520px;
+}
+
+.inicio-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.header h1 {
+  font-family: "Zen Dots", sans-serif;
+  font-size: 3rem;
+}
+
+@media (max-width: 991px) {
+  .content-inicio {
+    flex-direction: column;
+    height: auto;
+    padding-top: 120px;
+    width: 100%;
+  }
+
+  .img-inicio img{
+    width: 240px;
+  }
+
+  .header h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .inicio-content-container p {
+    font-size: 1rem;
+  }
+}
+
+/* QUEM SOMOS */
+
+.quem-somos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 120px;
+}
+
+.quem-somos img {
+  width: 480px;
+}
+
+.quem-somos-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.quem-somos-content h1 {
+  font-family: "Zen Dots", sans-serif;
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  padding: 64px 120px;
+}
+
+.footer-
+
+.footer-link {
+  text-align: flex-start;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  text-align: flex-start;
+  color: #0076ce;
+}
+
+.social-icons i {
+  color: #0076ce;
+  font-size: 1.5rem;
 }
