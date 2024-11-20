@@ -68,6 +68,25 @@
   font-size: 3rem;
 }
 
+/* ANIMAÇÂO */
+
+.rotate {
+  /* Define quantos segundos dura a animacao */
+  animation: spinner 100s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  display: inline-block;
+  width: 846px;
+  height: 846px;
+}
+
 @media (max-width: 991px) {
   .content-inicio {
     flex-direction: column;
