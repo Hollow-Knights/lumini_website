@@ -1,0 +1,57 @@
+.footer {
+  padding: 64px 120px 32px;
+  border-top: 1px solid #0076ce;
+}
+
+.footer-contant {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer h4 {
+  font-size: 1.2rem;
+}
+
+.footer-link {
+  text-align: flex-start;
+  text-decoration: none;
+}
+
+.footer-address a:hover {
+  color: #0076ce;
+}
+
+.footer-menu-list a:hover {
+  text-align: flex-start;
+  color: #0076ce;
+}
+
+.social-icons i {
+  color: #0076ce;
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer-bottom span {
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .footer-logo {
+  min-width: fit-content;
+}
+
+  .footer-menu {
+  min-width: fit-content;
+}
+
+}

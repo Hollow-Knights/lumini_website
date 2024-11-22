@@ -20,6 +20,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- Navbar CSS -->
+  <link rel="stylesheet" href="./css/navbar.css">
+  <!-- Footer CSS -->
+  <link rel="stylesheet" href="./css/footer.css">
   <title>Quem Somos</title>
 </head>
 <body>
@@ -45,18 +49,18 @@
             <a href="./nossas-soluções.html" class="nav-link primary-color">Nossas Soluções</a>
           </li>
           <li class="nav-item">
-            <a href="#faq" class="nav-link primary-color">Perguntas Frequentes</a>
+            <a href="./faq.html" class="nav-link primary-color">Perguntas Frequentes</a>
           </li>
           <li class="nav-item">
-            <a href="#contato" class="nav-link primary-color">Contato</a>
+            <a href="./contato.html" class="nav-link primary-color">Contato</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- QUEM SOMOS -->
-  <div class="container-fluid" id="quem-somos">
-    <div class="container quem-somos">
+  <div class="container-fluid">
+    <div class="container py-3 quem-somos">
       <img src="./src/img/logo-horizontal.svg" alt="Logo Lumini Energy Horizontal">
       <div class="quem-somos-content">
         <h1>Quem Somos</h1>
@@ -66,5 +70,70 @@
       </div>
     </div>
   </div>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid footer">
+
+    <div class="row footer-content">
+
+      <!-- LOGO -->
+      <div class="col-2 footer-logo">
+        <img src="./src/img/logo-vertical.svg" alt="Logo Lumini Energy Vertical">
+      </div>
+
+      <!-- MENU FOOTER -->
+      <div class="col-2 footer-menu">
+        <h4>Menu</h4>
+        <div>
+          <ul class="list-unstyled footer-menu-list">
+            <li><a href="./index.html" class="footer-link primary-color">Início</a></li>
+            <li><a href="./quem-somos.html" class="footer-link primary-color">Quem Somos</a></li>
+            <li><a href="./nossas-soluções.html" class="footer-link primary-color">Nossas Soluções</a></li>
+            <li><a href="./faq.html" class="footer-link primary-color">Perguntas Frequentes</a></li>
+            <li><a href="./contato.html" class="footer-link primary-color">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="col-4 footer-address">
+        <h4>Endereço</h4>
+        <a href="#" class="footer-link primary-color">Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP, 01311-000</a>
+      </div>
+
+      <!-- SOCIAL MEDIA -->
+      <div class="col-2 footer-social-media">
+        <h4>Mídias Sociais</h4>
+        <div class="col social-icons">
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+        </div>
+      </div>
+
+      <!-- TERMS & CONDITIONS -->
+      <div class="col-2 footer-menu">
+        <h4>Termos de Uso e<br>Políticas de Privacidade</h4>
+        <div>
+          <ul class="list-unstyled footer-menu-list">
+            <li><a href="#" class="footer-link primary-color">Termos de Uso</a></li>
+            <li><a href="#" class="footer-link primary-color">Políticas de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- DESENVOLVIDO POR LUMINI ENERGY -->
+    <div class="container-fluid footer-bottom">
+      <p class="primary-color">Desenvolvido com ❤ por️ Lumini Energy</p>
+      <h4>Projeto Global Solution - Engenharia de Software - FIAP ON</h4>
+      <p>
+        Guilherme Alves Rodrigues Ferreira<br>
+        Guilherme Rafael Schumann Carvalho<br>
+        João Pedro Brehula Souza<br>
+        Joao Pedro Diniz Fernandes de Oliveira<br>
+        Mariana Secchi Sanches<br>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

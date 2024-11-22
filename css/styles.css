@@ -5,50 +5,26 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  padding: 0px !important;
+  width: 100% important;
+}
+
+@media (max-width: 575px) {
+  body {
+    width: 100% !important;
+  }
+}
+
 .primary-color {
   color: #333333;
 }
-
-.navbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #0076ce;
-}
-
-.nav-item a:hover {
-  color: #0076ce;
-}
-
-#navbar a.active {
-  color: #0076ce;
-}
-
-#navbar-items .navbar-nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  background-color: #ffffff;
-}
-
-.nav-item {
-  padding: 0px 16px;
-}
-
-.nav-link {
-  text-align: center;
-}
-
-.navbar-brand img {
-  width: 180px;
-}
-
 /* INÍCIO */
 
 .content-inicio {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./src/img/backgroud-inicio.png");
-  height: 100vh;
   width: 100%;
   gap: 120px;
 }
@@ -72,7 +48,7 @@
 
 .rotate {
   /* Define quantos segundos dura a animacao */
-  animation: spinner 100s linear infinite;
+  animation: spinner 60s linear infinite;
 }
 
 @keyframes spinner {
@@ -91,8 +67,12 @@
   .content-inicio {
     flex-direction: column;
     height: auto;
-    padding-top: 120px;
-    width: 100%;
+    margin-top: 160px;
+    /* width: 100%; */
+  }
+
+  .img-inicio {
+    margin-top: -400px;
   }
 
   .img-inicio img{
@@ -119,8 +99,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   gap: 120px;
+  margin-top: 160px;
+  margin-bottom: 72px;
 }
 
 .quem-somos img {
@@ -135,34 +116,45 @@
 
 .quem-somos-content h1 {
   font-family: "Zen Dots", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
+@media (max-width: 1200px) {
 
+  .quem-somos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    gap: 0px;
+  }
 
+  .quem-somos-content {
+    flex-direction: column;
+    height: auto;
+    margin-top: 48px;
+    /* width: 100%; */
+  }
 
+  .quem-somos img{
+    width: 360px;
+  }
 
+  .quem-somos-content h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem;
+  }
 
+  .quem-somos-content h2 {
+    font-size: 1.5rem;
+  }
 
-
-/* FOOTER */
-.footer {
-  padding: 64px 120px;
+  .quem-somos-content p {
+    font-size: 1rem;
+  }
 }
 
-.footer-
-
-.footer-link {
-  text-align: flex-start;
-  text-decoration: none;
-}
-
-.footer-menu a:hover {
-  text-align: flex-start;
-  color: #0076ce;
-}
-
-.social-icons i {
-  color: #0076ce;
-  font-size: 1.5rem;
+@media (max-width: 768px) {
+  .quem-somos img{
+    width: 320px;
+  }
 }

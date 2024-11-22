@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #0076ce;
+}
+
+.nav-item a:hover {
+  color: #0076ce;
+}
+
+#navbar a.active {
+  color: #0076ce;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.nav-item {
+  padding: 0px 16px;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 180px;
+}

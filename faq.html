@@ -23,12 +23,14 @@
   <link rel="stylesheet" href="./css/styles.css">
   <!-- Navbar CSS -->
   <link rel="stylesheet" href="./css/navbar.css">
+  <!-- FAQ CSS -->
+  <link rel="stylesheet" href="./css/faq.css">
   <!-- Footer CSS -->
   <link rel="stylesheet" href="./css/footer.css">
-  <title>Lumini Energy</title>
+  <title>Perguntas Frequentes</title>
 </head>
 
-<body class="container-fluid">
+<body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
     <div class="container py-3">
@@ -42,7 +44,7 @@
       <div class="collapse navbar-collapse" id="navbar-items">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a href="./index.html" class="nav-link primary-color active">Início</a>
+            <a href="./index.html" class="nav-link primary-color">Início</a>
           </li>
           <li class="nav-item">
             <a href="./quem-somos.html" class="nav-link primary-color">Quem Somos</a>
@@ -51,7 +53,7 @@
             <a href="./nossas-soluções.html" class="nav-link primary-color">Nossas Soluções</a>
           </li>
           <li class="nav-item">
-            <a href="./faq.html" class="nav-link primary-color">Perguntas Frequentes</a>
+            <a href="./faq.html" class="nav-link primary-color active">Perguntas Frequentes</a>
           </li>
           <li class="nav-item">
             <a href="./contato.html" class="nav-link primary-color">Contato</a>
@@ -60,22 +62,65 @@
       </div>
     </div>
   </nav>
-  <!-- INÍCIO -->
-  <div class="container-fluid" id="inicio">
-    <div class="container content-inicio">
-      <div class="container-sm inicio-content-container">
-        <div class="header primary-color">
-          <h1>Lumini Energy</h1>
-          <h2>sua energia na palma da mão.</h2>
-        </div>
-        <p>Monitoramos o consumo de energia de suas tomadas e eletrodomésticos, permitindo que você gerencie tudo de forma
-          simples e intuitiva através do nosso aplicativo.</p>
+
+  <!-- FAQ -->
+  <div class="container faq-container" id="faq">
+    <div class="faq-title">
+      <h2>Perguntas Frequentes</h2>
+    </div>
+    <div class="question">
+      <div class="header-question">
+        <h4>É necessário um grande investimento inicial para implementar essas soluções?</h4>
+        <button class="faq-btn"><img src="./src/img/faq-arrows/faq-arrow-close.svg" alt="Fechar"></button>
       </div>
-      <div class="img-inicio">
-        <img src="src/img/simbol.svg" alt="Símbolo Lumini Energy" class="spinner rotate">
+      <p class="faq-description faq-description-off">Oferecemos opções personalizadas que se ajustam ao seu orçamento.
+        Além disso, muitos de nossos clientes observam que a economia gerada paga o investimento em um curto período de
+        tempo.</p>
+    </div>
+    <div class="question">
+      <div class="header-question">
+        <h4>A instalação do Lumiwire é segura?</h4>
+        <button class="faq-btn"><img src="./src/img/faq-arrows/faq-arrow-close.svg" alt="Fechar"></button>
       </div>
+      <p class="faq-description faq-description-off">Sim, a instalação do Lumiwire é totalmente segura e projetada para
+        garantir a integridade do seu ambiente e a eficiência do sistema. Nosso processo de instalação segue rigorosos
+        padrões de segurança e boas práticas do setor. Antes de iniciar, realizamos uma análise detalhada do local para
+        garantir que todas as condições necessárias sejam atendidas, como compatibilidade elétrica e adequação
+        estrutural.</p>
+    </div>
+    <div class="question">
+      <div class="header-question">
+        <h4>Vocês oferecem suporte e manutenção após a instalação?</h4>
+        <button class="faq-btn"><img src="./src/img/faq-arrows/faq-arrow-close.svg" alt="Fechar"></button>
+      </div>
+      <p class="faq-description faq-description-off">Sim, oferecemos suporte e manutenção completos após a instalação.
+        Nossa equipe está disponível para atender dúvidas, realizar ajustes e garantir o pleno funcionamento do sistema.
+        Além disso, acompanhamos o desempenho das soluções implementadas, oferecendo atualizações e melhorias quando
+        necessário, para que você tenha sempre o melhor resultado.</p>
+    </div>
+    <div class="question">
+      <div class="header-question">
+        <h4>O Lumiwire pode afetar negativamente meu produto?</h4>
+        <button class="faq-btn"><img src="./src/img/faq-arrows/faq-arrow-close.svg" alt="Fechar"></button>
+      </div>
+      <p class="faq-description faq-description-off">Não, o Lumiwire é projetado para otimizar o consumo de energia sem
+        impactar negativamente o desempenho ou a qualidade dos seus produtos. Pelo contrário, ao promover uma gestão
+        eficiente da energia, ele contribui para um ambiente mais estável, reduzindo falhas e prolongando a vida útil
+        dos equipamentos conectados.</p>
+    </div>
+    <div class="question">
+      <div class="header-question">
+        <h4>As soluções são compatíveis com aparelhos antigos?</h4>
+        <button class="faq-btn"><img src="./src/img/faq-arrows/faq-arrow-close.svg" alt="Fechar"></button>
+      </div>
+      <p class="faq-description faq-description-off">Sim, as soluções Lumiwire são compatíveis com a maioria dos
+        aparelhos antigos. Nossa tecnologia pode ser adaptada para otimizar o desempenho desses equipamentos, reduzindo
+        o consumo de energia sem comprometer sua funcionalidade. Quando necessário, oferecemos recomendações para
+        upgrades que tragam ainda mais eficiência.</p>
     </div>
   </div>
+
+
 
   <!-- FOOTER -->
   <footer class="container-fluid footer">
@@ -104,7 +149,8 @@
       <!-- ADDRESS -->
       <div class="col-4 footer-address">
         <h4>Endereço</h4>
-        <a href="#" class="footer-link primary-color">Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP, 01311-000</a>
+        <a href="#" class="footer-link primary-color">Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP,
+          01311-000</a>
       </div>
 
       <!-- SOCIAL MEDIA -->
@@ -141,6 +187,8 @@
       </p>
     </div>
   </footer>
+
+  <script src="./src/js/faq-script.js"></script>
 </body>
 
 </html>

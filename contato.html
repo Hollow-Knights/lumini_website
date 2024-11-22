@@ -23,9 +23,11 @@
   <link rel="stylesheet" href="./css/styles.css">
   <!-- Navbar CSS -->
   <link rel="stylesheet" href="./css/navbar.css">
+  <!-- Contact CSS -->
+  <link rel="stylesheet" href="./css/contact.css">
   <!-- Footer CSS -->
   <link rel="stylesheet" href="./css/footer.css">
-  <title>Lumini Energy</title>
+  <title>Contato</title>
 </head>
 
 <body class="container-fluid">
@@ -42,7 +44,7 @@
       <div class="collapse navbar-collapse" id="navbar-items">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a href="./index.html" class="nav-link primary-color active">Início</a>
+            <a href="./index.html" class="nav-link primary-color">Início</a>
           </li>
           <li class="nav-item">
             <a href="./quem-somos.html" class="nav-link primary-color">Quem Somos</a>
@@ -54,27 +56,42 @@
             <a href="./faq.html" class="nav-link primary-color">Perguntas Frequentes</a>
           </li>
           <li class="nav-item">
-            <a href="./contato.html" class="nav-link primary-color">Contato</a>
+            <a href="./contato.html" class="nav-link primary-color active">Contato</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- INÍCIO -->
-  <div class="container-fluid" id="inicio">
-    <div class="container content-inicio">
-      <div class="container-sm inicio-content-container">
-        <div class="header primary-color">
-          <h1>Lumini Energy</h1>
-          <h2>sua energia na palma da mão.</h2>
-        </div>
-        <p>Monitoramos o consumo de energia de suas tomadas e eletrodomésticos, permitindo que você gerencie tudo de forma
-          simples e intuitiva através do nosso aplicativo.</p>
+  <!-- CONTATO -->
+  <div class="container container-fale-conosco" id="contato">
+    
+    <div class="container container-formulario-contato">
+      <div class="forms-title">
+        <h2>Fale Conosco</h2>
       </div>
-      <div class="img-inicio">
-        <img src="src/img/simbol.svg" alt="Símbolo Lumini Energy" class="spinner rotate">
+      <div class="formulario-contato">
+        <form action="submit">
+          <div class="input-contact-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Digite o seu nome completo">
+          </div>
+          <div class="input-contact-form">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite o seu e-mail">
+          </div>
+          <div class="input-contact-form">
+            <label for="tel">WhatsApp</label>
+            <input type="tel" id="tel" placeholder="Digite o número do seu WhatsApp">
+          </div>
+          <div class="input-contact-form">
+            <label for="textarea">Mensagem</label>
+            <textarea id="textarea" rows="4" placeholder="Envie-nos uma mensagem"></textarea>
+          </div>
+          <button class="btn-filled" style="width: 100%;">Enviar</button>
+        </form>
       </div>
     </div>
+    <div class="img-fale-conosco"><img src="./src/img/logo-vertical.svg" alt="Logo Lumini Energy Vertical"></div>
   </div>
 
   <!-- FOOTER -->
